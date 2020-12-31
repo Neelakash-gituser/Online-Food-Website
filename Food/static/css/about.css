@@ -1,0 +1,46 @@
+#mainNav{
+    background: #ccc;
+    color: black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+#mainNav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#mainNav li{
+    display: inline;
+    padding: 5px 10px;
+}
+#mainNav a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+#mainNav li:hover{
+    background: #aaa;
+}
+#mainHeader{
+    background: #333;
+    color: white;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    font-family: monospace;
+
+}
+
+#mainFooter{
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+body{
+    background-color: greenyellow;
+}

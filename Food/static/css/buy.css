@@ -1,0 +1,91 @@
+#mainNav{
+    background: #ccc;
+    color: black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+#mainNav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#mainNav li{
+    display: inline;
+    padding: 5px 10px;
+}
+#mainNav a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+#mainNav li:hover{
+    background: #aaa;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+}
+#mainFooter{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+#jumbo{
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-black-meat-western-food-banner-background-image_194600.jpg);
+    background-position: center center;
+    min-height: 150px;
+	text-align: center;
+	
+}
+#jumbo h4{
+	color: cornsilk;
+}
+#mainHeader{
+    background: #333;
+    color: white;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    font-style: italic;
+
+}
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: left;
+    
+}
+
+input{
+    display: inline-block;
+    float: left;
+}
+button{
+    background-color: grey;
+    border: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

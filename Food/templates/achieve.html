@@ -1,0 +1,80 @@
+<nav id="mainNav">
+  <div class="container">
+    <ul>
+      
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li> <a href="{% url 'contact' %}">Contact</a></li>
+      <li><a href="{% url 'testimonials' %}">Testimonial</a></li>
+      <li><a href="{% url 'privacy' %}">Privacy</a></li>
+      <li><a href="{% url 'achieve' %}">Achievements & Awards</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements & Awards</title>
+
+  <link rel="stylesheet" href="{% static 'css/achieve.css' %}">
+</head>
+<body>
+<header id="mainheader">
+  <div class="container">
+
+    <h1>Awards & Achievements</h1>
+
+  </div>
+  
+</header>
+
+<section id="jumbo">
+  <div class="container">
+    <h1>Our Journey So Far</h1>
+  </div>
+</section>
+
+<div class="container">
+<aside id="sidebar">
+  <p>
+    <h4>Our Outlets</h4>
+    <li>Gariahat</li>
+    <li>Triangular Park</li>
+    <li>Hajra More</li>
+    <li>Shovabajar</li>
+    <li>Kasba</li>
+    <li>Behala</li>
+    <li>Park Circus</li>
+  </p>
+</aside>
+
+<section id="main">
+  <h2>Achievements & Awards</h2>
+  <ul>
+  <li>Best Bengali Restaurants | Anadabajar Potrika</li>  
+  <li>Pujo Khabar Sera 2013 | Swiggy</li> 
+  <li>Best Pice Restaurant 2011 | Foodka</li>
+  <li>Foods 2018 Travel Award | MDPI</li>
+  <li> Mukhorochok Bangali Award | Radio Mirchi</li>
+  <li>Sananda Food Festival Winner 2018 | Sananda</li>
+  <li>All Bengal Food Festival Winner 2019 | Food Ministry of West Bengal</li>
+  </ul>
+
+</section>
+</div>
+
+<footer id="mainfooter">
+  <p>Copyright &copy;2020 Kheye-Jao's Website</p>
+</footer>
+
+</body>
+</html>
+
+
+

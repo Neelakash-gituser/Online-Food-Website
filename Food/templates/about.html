@@ -1,0 +1,92 @@
+<nav id="mainNav">
+  <div class="container">
+    <ul>
+      
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li> <a href="{% url 'contact' %}">Contact</a></li>
+      <li><a href="{% url 'testimonials' %}">Testimonial</a></li>
+      <li><a href="{% url 'privacy' %}">Privacy</a></li>
+      <li><a href="{% url 'achieve' %}">Achievements & Awards</a></li>
+      
+    </ul>
+  </div>
+</nav>
+{% load static %}
+<html>
+  <link rel="stylesheet" href="{% static 'css/about.css' %}">
+<body>
+  <header id="mainHeader">
+    <div class="container">
+      <h1>ABOUT US</h1>
+    </div>
+  </header>
+<section id="jumbo">
+  <div class="container">
+    <h3>HI! Welcome to Shorshe.Shop with the BEST!!We assure our customers with the best qualities.</h3>
+    <h3>Shorshe is online food delivery site that provides you exclusive accessories of every category. Our mission is to provide the best quality products at the most afforadble prices!</h3>
+    <h2> We aim at providing our customers,all our loyalty and building a world full of trust for them worldwide!</h2>
+  </div>
+  
+</section>
+
+<section id="main">
+  <div class="container">
+    <h1>"If food is an art , then Shorshe is the Picasso" - Sanjeev Kapoor</h1>
+<p>The story of Shorshe began out of a garage space at Ekdalia, Kolkata in March 2003. Two friends from diverse backgrounds with no formal F & B training but having a passion for food and people, reckoned from their own personal experiences that there was a vacuum in Kolkata for simple 'home style' Bengali food. The name Kheye-Jao was chosen from a popular Bengali film song rendered by the legendary singer Hemanta Mukherjee.
+        Within a month of opening the first outlet, Kheye-Jao struck a chord with the masses. A combination of filling up the vacuum in the market along with the food, the brand name, the affordability, the simple environment and a bit of media information...all these played a role in attracting the crowds.
+
+        Thereafter the story changed completely...by May 2003 we had huge crowds waiting outside our little outlet on the weekends...it was embarrassing and a time had come to think ahead. In the course of the next few years the market driven demand resulted in Kheye-Jao's expansion in Kolkata. The team evolved into a structured format in marketing, operations and CRM areas. The customers...foodies from all over India and many parts of the world including celebrities from different walks of life...contributed immensely in establishing Kheye-Jao. The media also played a major role in promoting brand Kheye-Jao.
+
+        Shorshe expanded beyond Kolkata to Bengaluru, Siliguri and Puri between 2009 and 2015 and the expansion plans are ongoing . 
+      </p><br><br>
+<center><h2>Our Team</h2></center>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src='{% static "Food/anjana.jpg" %}' alt="anjana" style="width:50%">
+      
+        <h2>Anjana Bhadra</h2>
+        <p class="title">Developer and admin of Shorshe</p>
+        <p1>"We want support and love to enhance the family of Shorshe.Shorshe brings not only the tastes,also saves your pocket.</p1>
+  <p1>In Future we want to bring more facilities for you!"</p1>
+      
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src='{% static "Food/neel.jpg" %}' alt="neel" style="width:30%">
+      
+        <h2>Neelakash Chatterjee</h2>
+        <p class="title">Developer and admin of Shorshe</p>
+        <p1>"We want support and love to enhance the family of Shorshe.Shorshe brings not only the tastes,also saves your pocket.</p1>
+      
+    </div>
+  </div>
+</div>
+<div class="media">
+  <img src='{% static "Food/momo.jpg" %}' class="mr-3" alt="...">
+  <div class="media-body">
+    <h5 class="mt-0">Chicken Momo</h5>
+    Momo is a type of steamed dumpling with some form of filling. Momo has become a traditional delicacy in Nepal, Tibet, as well as among Nepalese and Tibetan communities in Bhutan, as well as people of Ladakh, Northeast India and Darjeeling regions of India.
+  </div>
+</div>
+<div class="media">
+  <img src='{% static "Food/uttapam.jpg" %}' class="mr-3" alt="uttapam" style="width:30%">
+  <div class="media-body">
+    <h5 class="mt-0">Uttapam</h5>
+    Uthappam is a type of dosa from South India. Unlike a typical dosa, which is crisp and crepe-like, uttapam is thicker, with toppings.
+
+  </div>
+</div>
+  </div>
+</section>
+&nbsp;
+&nbsp;
+
+
+<footer id="mainfooter">
+  <p>&copy; 2020. Shorshe.All Rights Reserved<p>
+</footer>
+</body>
+</html>

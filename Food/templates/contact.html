@@ -1,0 +1,54 @@
+<nav id="mainNav">
+  <div class="container">
+    <ul>
+      
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li> <a href="{% url 'contact' %}">Contact</a></li>
+      <li><a href="{% url 'testimonials' %}">Testimonial</a></li>
+      <li><a href="{% url 'privacy' %}">Privacy</a></li>
+      <li><a href="{% url 'achieve' %}">Achievements & Awards</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+{% load static %}
+<html>
+<body>
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+<header id="mainHeader">
+  <div class="container">
+    <h1>CONTACT US</h1> 
+  </div>
+</header>
+
+<section id="jumbo">
+  <div class="container">
+    <h4>Call Us - 8670663479/9987456269 and for more details email us at Shorshe2020@gmail.com<h4>
+      <p> Address- Kolkata 700008</p>
+  </div>
+</section>
+   
+    <div class="container">
+     <form action="contact" method="POST">{% csrf_token %}
+     Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name"><br><br><br>
+
+     Email ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"  name="email"><br><br><br>
+
+    How Can We Help You: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea id="message" name="message" rows="7" cols="42"></textarea><br><br><br>
+	  <br>
+      <button type="submit" onclick="myFunction()">SUBMIT</button>
+    </form>
+  </div>
+  <footer id="mainfooter">
+    <p>Copyright &copy;2020 Kheye-Jao's Website</p>
+  </footer>
+  
+  </body>
+</html>   
+<script>
+  function myFunction(){
+    alert("thank you");
+    }
+</script>	

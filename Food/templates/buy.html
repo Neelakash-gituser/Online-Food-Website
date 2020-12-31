@@ -1,0 +1,73 @@
+<nav id="mainNav">
+  <div class="container">
+    <ul>
+      
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li> <a href="{% url 'contact' %}">Contact</a></li>
+      <li><a href="{% url 'testimonials' %}">Testimonial</a></li>
+      <li><a href="{% url 'privacy' %}">Privacy</a></li>
+      <li><a href="{% url 'achieve' %}">Achievements & Awards</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+{% load static %}
+<html>
+<body>
+  <link rel="stylesheet" href="{% static 'css/buy.css' %}">
+<header id="mainHeader">
+  <div class="container">
+    <h1>Place your order !!!</h1> 
+  </div>
+</header>
+
+<section id="jumbo">
+  <div class="container">
+    <h4>Call Us - 8670663479/9987456269 and for more details email us at Shorshe2020@gmail.com<h4>
+      <p> Address- Kolkata 700008</p>
+  </div>
+</section>
+   
+  <div class="container">
+     <form action="buy" method="POST">{% csrf_token %}
+    
+    <label>Quantity:</label><select name="quantity" id="quantity">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    </select><br><br>
+
+    <label>Payment Method:</label><select name="payment_method" id="payment_method">
+      <option value="COD">Cash on Delivery</option>
+      <option value="Online">Debit Card/Credit Card/Net Banking</option>
+    </select><br><br>
+
+    <label>Price:</label> <input type="text"  name="price"><br><br>
+    <label>Name:</label> <input type="text"  name="name"><br><br>
+    <label>Mobile:</label> <input type="text"  name="mobile"><br><br>
+    <label>Address:</label> <input type="text"  name="address"><br><br>
+    <label>City:</label><input type="text"  name="city"><br><br>
+
+	  <br>
+      <button type="submit" onclick="myFunction()">SUBMIT</button>
+    </form>
+  </div>
+
+  <footer id="mainfooter">
+    <p>Copyright &copy;2020 Kheye-Jao's Website</p>
+  </footer>
+  
+  </body>
+</html>   
+<script>
+  function myFunction(){
+    alert("Thank you");
+    }
+</script>	

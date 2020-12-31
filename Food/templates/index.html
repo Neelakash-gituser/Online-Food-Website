@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Shorshe.com</title>
+	<style>
+		.col-md-3
+		{
+		display: inline-block;
+		margin-left:-4px;
+		}
+		
+		.carousel-indicators.active {   
+		background-color: blue;
+		}	
+		.col-md-3 img{
+		
+		width:100%;
+		height:200px;
+		}
+		
+		body .carousel-inicator li{
+		background-color: blue;
+		}
+		body .carousel-indicators{
+		bottom:0;
+		}
+		
+		
+		body .carousel-control-prev-icon,
+		body .carousel-control-next-icon{
+		background-color: blue;
+		}
+		  body.no-padding{
+		  padding=left:0;
+		  padding=right:0;
+		  }
+		  .carousel-control-prev-icon {
+            background: black no-repeat center center;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+        }
+
+        .carousel-control-next-icon {
+            background: black no-repeat center center;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+
+        }
+        body .carousel-indicators{
+        bottom:0;
+        }
+
+        .carousel-indicators .active{
+        background-color: blue;
+        }
+	</style>
+  </head>
+  <body>
+	{% load static %}
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Shorshe</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact">Contact</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="testimonials">Testimonials</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="privacy">Privacy</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="achieve">Awards And Achievements</a>
+      </li>
+      
+    </ul>
+    <form method="get" action="/search" class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" id="search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+<!--        carousel indicators starts from here-->
+
+    <div class="container">
+        <div id="demo" class="carousel slide my-3" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1" ></li>
+      <li data-target="#demo" data-slide-to="2" ></li>
+    </ul>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-xs-3 col-sm-3 col-md-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src='{% static "Food/momo.jpg" %}' class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Chicken Momo</h5>
+                      <p class="card-text">Momo is a type of East and South Asian steamed filled dumpling, popular across the Indian subcontinent and the Himalayan regions of South Asia</p>
+                      <a href="buy" class="btn btn-primary">Buy</a>
+					 <!---- <a href="/Food/productview/{{i.id}}" class="btn btn-primary">quickview</a>--->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src='{% static "Food/veg_pasta.jpg" %}' class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Veg Pasta</h5>
+                      <p class="card-text">Pasta is the Italian designation or name given to a type of starchy noodle or dumpling food or dish typically made from grain flour, commonly wheat, mixed into a paste or dough, usually with water or eggs, and formed or cut into sheets or other shapes. It is usually cooked by boiling, baking or frying.</p>
+                      <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src='{% static "Food/dosa.jpg" %}' class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Masala Dosa</h5>
+                      <p class="card-text">Masala dosa or masale dose or masaldosa is a variation of the popular South Indian food dosa, which has its origins in Tuluva Mangalorean cuisine of Karnataka. It is made from rice, lentils, potato, methi, and curry leaves, and served with chutneys and sambar.</p>
+                      <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src='{% static "Food/ras_malai.jpg" %}' class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Ras Malai</h5>
+                      <p class="card-text">Ras malai or rossomalai or Rasamalei is a dessert originating from the eastern regions of the Indian subcontinent. The dessert is called rossomalai in Bengali language, ras malai in Hindi language and Rasa Malei in Odia language. It has been described as "a rich cheesecake without a crust".</p>
+                      <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-xs-3 col-sm-3 col-md-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src='{% static "Food/uttapam.jpg" %}' class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Uttapam</h5>
+                      <p class="card-text">Uthappam is a type of dosa from South India. Unlike a typical dosa, which is crisp and crepe-like, uttapam is thicker, with toppings.</p>
+                      <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src='{% static "Food/ilish.jpg" %}' class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Shorhe Ilish Bengali Dish!</h5>
+                      <p class="card-text">Shorshe ilish is a Bengali dish, native to the Bengal region of the Indian subcontinent, made from hilsa or Tenualosa ilisha, a type of herring, cooked in mustard gravy</p>
+                      <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src= '{% static "Food/thali.jpg" %}'class="card-img-top" alt="thali">
+                    <div class="card-body">
+                      <h5 class="card-title">Chicken thali</h5>
+                      <p class="card-text">Chicken Thali is a plate full of rice,roti,dal served with a bowl full of hot spicy chicken curry.</p>
+                      <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3">
+                  <div class="card" style="width: 18rem;">
+                    <img src='{% static "Food/kabab.jpg" %}' class="card-img-top" alt="kabab">
+                    <div class="card-body">
+                      <h5 class="card-title">Chicken Kabab</h5>
+                      <p class="card-text">Kebabs are various cooked meat dishes, with their origins in Middle Eastern cuisine. The traditional meat for kebabs is most often mutton or lamb, but regional recipes may include beef, goat, chicken, fish, or more</p>
+                      <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="carousel-item">
+
+              <div class="row">
+      <div class="col-xs-3 col-sm-3 col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src='{% static "Food/lassi.jpg" %}' class="card-img-top" alt="lassi">
+          <div class="card-body">
+            <h5 class="card-title">Lassi</h5>
+            <p class="card-text">Lassi is a popular traditional dahi-based drink that originated in India. Lassi is a blend of yoghurt, water, spices and sometimes fruit. Namkeen lassi is similar to doogh, while sweet and mango lassis are like milkshakes. Bhang lassi is infused with the drug cannabis in the form of bhang</p>
+            <a href="#" class="btn btn-primary">Buy</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-3 col-sm-3 col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src='{% static "Food/churma.jpg" %}' class="card-img-top" alt="churma">
+          <div class="card-body">
+            <h5 class="card-title">Dal Bati Churma</h5>
+            <p class="card-text">Dal baati is an Indian dish of dal and baati. It is popular in Maharashtra's Khandesh and Vidarbha region, Rajasthan, Gujarat, Uttar Pradesh and Madhya Pradesh. Dal is prepared using tuvaar dal, chana dal, mung dal, moth dal, or urad dal.</p>
+            <a href="#" class="btn btn-primary">Buy</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-3 col-sm-3 col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src="{% static "Food/Paneer.jpg" %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Paneer Butter Masala</h5>
+            <p class="card-text">Paneer tikka masala is an Indian dish of marinated paneer cheese served in a spiced gravy.</p>
+            <a href="#" class="btn btn-primary">Buy</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-3 col-sm-3 col-md-3">
+        <div class="card" style="width: 18rem;">
+          <img src='{% static "Food/biriyani.jpg" %}' class="card-img-top" alt="biriyani">
+          <div class="card-body">
+            <h5 class="card-title">Hydrabadi Biriyani</h5>
+            <p class="card-text">Hyderabadi biryani is a variety of biryani from Hyderabad, Telangana, India. It is prepared from rice using the dum method of cooking.</p>
+            <a href="#" class="btn btn-primary">Buy</a>
+          </div>
+        </div>
+      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <a class="carousel-control-prev " href="#demo" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <marquee><h3>
+      Looking for some good quality tasty food ? You're at the right place!!
+    </h3></marquee>
+  <center><li>Contact us: Email-shorshe87@gmail.com</li> 
+        <li>Mobile :8670663479/9987456269 <br></li> 
+        <li> Our Partners & Sponsors : <br>
+          <ol>Radio Mirch 98.3 FM <br>
+            Shorshe<br>
+            <br></ol></center>
+           
+      </li>
+  
+  <center><h1>Most Popular Items</h1></center>
+  <div class="media">
+  <img src='{% static "Food/uttapam.jpg" %}' class="mr-3" alt="uttapam" style="width:30%">
+  <div class="media-body">
+    <h5 class="mt-0">Uttapam</h5>
+    Uthappam is a type of dosa from South India. Unlike a typical dosa, which is crisp and crepe-like, uttapam is thicker, with toppings.
+
+  </div>
+</div>
+  <center>
+  <p1><br>&copy; 2020.Shorshe.All Rights Reserved.</br>
+  Designed and developed by Anjana And Neelakash<p1>
+  </center>
+  </body>
+</html>

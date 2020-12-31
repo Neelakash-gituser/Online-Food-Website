@@ -1,0 +1,75 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+}
+#mainHeader{
+    background: #333;
+    color: white;
+}
+
+
+#mainNav{
+    background: #ccc;
+    color: black;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+#mainNav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#mainNav li{
+    display: inline;
+    padding: 5px 10px;
+}
+#mainNav a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+#mainNav li:hover{
+    background: #aaa;
+}
+#jumbo{
+    background-image: url(https://www.edcinteractive.com/wp-content/uploads/2014/12/gallery1.jpg);
+    background-position: center center;
+    min-height: 250px;
+    text-align: center;
+}
+#jumbo h1{
+    color: black;
+    font-size: 45px;
+    padding-top: 20px;
+    line-height: 1.6em;
+}
+#main{
+    float: right;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+#sidebar{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    border-right: 1px solid black;
+    box-sizing: border-box;
+    font-style: italic ;
+}
+#mainFooter{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
